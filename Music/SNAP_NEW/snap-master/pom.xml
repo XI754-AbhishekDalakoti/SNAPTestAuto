@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>Snap</groupId>
+    <artifactId>Snap</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <build>
+        <defaultGoal>install</defaultGoal>
+        <plugins>
+            <plugin>
+                <groupId>com.github.greengerong</groupId>
+                <artifactId>maven-ng-protractor</artifactId>
+                <version>0.0.2</version>
+                <configuration>
+                    <protractor>protractor</protractor>
+                    <configFile>protractor.conf.js</configFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>ng-protractor</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+			<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-clean-plugin</artifactId>
+            <version>3.1.0</version>
+            <configuration>
+                <filesets>
+                    <fileset>
+                        <directory>allure-results</directory>
+                        <includes>
+                            <include>**/*</include>
+                        </includes>
+                        <followSymlinks>false</followSymlinks>
+                    </fileset>
+                </filesets>
+            </configuration>
+        </plugin>
+        </plugins>
+    </build>
+    <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>ru.yandex.qatools.allure</groupId>
+                <artifactId>allure-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <resultsPattern>allure-results</resultsPattern>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+
+</project>

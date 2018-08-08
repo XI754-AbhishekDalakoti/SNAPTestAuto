@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1533714135548' stop='1533714216944'>
+    <name>Verify login functionality with valid credentials</name>
+    <title>Verify login functionality with valid credentials</title>
+    <test-cases>
+        <test-case start='1533714135549' status='passed' stop='1533714141977'>
+            <name>should enter username and password in Login Page</name>
+            <title>should enter username and password in Login Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='5455d3ad-c11a-4eab-a1ef-d3e2b5b30f87-attachment.png' type='image/png' size='189646'/>
+            </attachments>
+        </test-case>
+        <test-case start='1533714141977' status='failed' stop='1533714185563'>
+            <name>should verify and enter details for Slack Page</name>
+            <title>should verify and enter details for Slack Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='bbc507e1-6e0d-4c53-b31b-f370f4bdcadf-attachment.png' type='image/png' size='26339'/>
+            </attachments>
+            <failure>
+                <message>Expected 'https://snap-nydailynews-stage.tribdev.com/login/' to equal 'https://snap-nydailynews-stage.tribdev.com/login/slack/'.</message>
+                <stack-trace>Error: Failed expectation
+                    at UserContext.&lt;anonymous> (C:\Users\adalakoti\Music\SNAP_NEW\snap-master\src\test\test_spec\login_spec.js:34:30)
+                    at C:\Users\satya\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+                    at new ManagedPromise (C:\Users\satya\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+                    at ControlFlow.promise (C:\Users\satya\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+                    at schedulerExecute (C:\Users\satya\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+                    at TaskQueue.execute_ (C:\Users\satya\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+                    at TaskQueue.executeNext_ (C:\Users\satya\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+                    at asyncRun (C:\Users\satya\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2974:25)
+                    at C:\Users\satya\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1533714185563' status='passed' stop='1533714201396'>
+            <name>should enter details on organisational login page</name>
+            <title>should enter details on organisational login page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='42c1c030-c4c2-456d-b8e5-7d9ef680b8eb-attachment.png' type='image/png' size='10289'/>
+            </attachments>
+        </test-case>
+        <test-case start='1533714201396' status='passed' stop='1533714216943'>
+            <name>should verify SNAP home page</name>
+            <title>should verify SNAP home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='32735214-1448-4381-aa8b-7032d135ffa1-attachment.png' type='image/png' size='185551'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,13 @@
+#this is the base image we use to create our image from
+FROM jenkins
+
+#just info about who created this
+MAINTAINER admin (email)
+
+#get rid of admin password setup
+ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
+
+#automatically installing all plugins
+COPY plugins.txt /workspace/SnapAutomation/plugins.txt
+RUN /bin/bash -c "/Users/adalakoti/install-plugins.sh" < /workspace/SnapAutomation/plugins.txt
+

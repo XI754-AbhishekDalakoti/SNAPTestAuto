@@ -1,0 +1,48 @@
+{
+  "url": "https://snap-nydailynews-stage.tribdev.com/",
+  "locators": {
+    "LoginPage": {
+      "username": "input[name='username']",
+      "password": "input[name='password']",
+      "button": "button[class='btn meta-btn']",
+      "error_div": "//div[contains(text(), 'Incorrect username or password.')]",
+      "error_popup":"//input[name='username'][contains(attribute(), 'required')]",
+      "contact_link":"//p[@id='header-help-text-links']/a",
+      "contact_tab_header":"h1[class='logonHeader']"
+    },
+    "SlackLoginPage": {
+      "signInWithSlackButton": "img[alt='Sign in with Slack']",
+      "workspace": "input[id='domain']",
+      "continueButton": "button[type='submit']",
+      "signInWithADFSButton": "a[data-clog-params='index_saml_sign_in_with_saml']"
+    },
+    "OrganisationalLoginPage": {
+      "username": "input[id='userNameInput']",
+      "password": "input[id='passwordInput']",
+      "signin": "span[id='submitButton']",
+      "authorise": "button[id='oauth_authorizify']"
+    },
+    "LogoutPage": {
+      "useroptions": "select[id='user-options']",
+      "logout": "option[value='logout']"
+    },
+    "data": {
+      "username": "snap-test-auto-normal-ct-xebia",
+      "password": "XeBit@20",
+      "workspace_name": "tribpub",
+      "org_username": "sgarg",
+      "org_password": "Tribune$1",
+      "invalid_username":"snap-test-auto",
+      "invalid_password":"xebia@123",
+      "loginpage_title":"SNAP | Login",
+      "slackpage_url":"https://snap-nydailynews-stage.tribdev.com/login/slack/",
+      "org_loginpage_title":"Sign In",
+      "homepage_title":"SNAP | Home",
+      "error_msg":"Incorrect username or password."
+    }
+  }
+}
+
+
+
+
